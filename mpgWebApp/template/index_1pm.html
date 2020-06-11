@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Diabetes Prediction usecase</title>
+</head>
+<body>
+
+
+    {{a}}
+    <h2>Check your Diabetes Instantly</h2>
+
+    <h3>Please enter details:</h3>
+    <br>
+    <form method="post" enctype="multipart/form-data" action="predictMPG">
+ 
+ {% csrf_token %}
+ <div class="col-md-4 col-sm-4"><label for="fname">age:</label> </div> <input name="ageVal" type="text" value=50><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">bs_fast:</label> </div> <input type="text" id="lname" name="bs_fastVal" value=6.8><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">bs_pp:</label> </div> <input type="text" id="fname" name="bs_ppVal" value=8.8><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">plasma_r:</label> </div> <input type="text" id="lname" name="plasma_rVal" value=11.2><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">plasma_f:</label></div>  <input type="text" id="fname" name="plasma_fVal" value=7.2><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">hbA1c:</label> </div> <input type="text" id="lname" name="hbA1cVal" value=62><br><br>
+ <br>
+
+ <input type="submit" value="Submit" ></div>
+ 
+</form>
+<br>
+
+</body>
